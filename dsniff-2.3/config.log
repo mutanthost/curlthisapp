@@ -1,0 +1,234 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:547: checking for gcc
+configure:660: checking whether the C compiler (gcc  -L/usr/local/opt/openssl/lib) works
+configure:676: gcc -o conftest  -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:673:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main(){return(0);}
+^
+1 warning generated.
+configure:702: checking whether the C compiler (gcc  -L/usr/local/opt/openssl/lib) is a cross-compiler
+configure:707: checking whether we are using GNU C
+configure:716: gcc -E conftest.c
+configure:735: checking whether gcc accepts -g
+configure:797: checking for a BSD compatible install
+configure:852: checking for ranlib
+configure:881: checking how to run the C preprocessor
+configure:902: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:965: checking for X
+configure:1032: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1028:10: fatal error: 'X11/Intrinsic.h' file not found
+#include <X11/Intrinsic.h>
+         ^
+1 error generated.
+configure: failed program was:
+#line 1027 "configure"
+#include "confdefs.h"
+#include <X11/Intrinsic.h>
+configure:1108: gcc -o conftest -g -O2 -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lXt  1>&5
+configure:1104:1: warning: implicit declaration of function 'XtMalloc' is invalid in C99 [-Wimplicit-function-declaration]
+XtMalloc()
+^
+1 warning generated.
+ld: library not found for -lXt
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 1101 "configure"
+#include "confdefs.h"
+
+int main() {
+XtMalloc()
+; return 0; }
+configure:1795: checking for ANSI C header files
+configure:1808: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1875: gcc -o conftest -g -O2 -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:1870:67: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+                                                                  ^
+configure:1870:67: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+1 warning generated.
+configure:1902: checking for err.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for fcntl.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for sys/ioctl.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for sys/queue.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for unistd.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for libgen.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for net/if_tun.h
+configure:1912: gcc -E -I/usr/local/opt/openssl/include conftest.c >/dev/null 2>conftest.out
+configure:1908:10: fatal error: 'net/if_tun.h' file not found
+#include <net/if_tun.h>
+         ^
+1 error generated.
+configure: failed program was:
+#line 1907 "configure"
+#include "confdefs.h"
+#include <net/if_tun.h>
+configure:1939: checking for MIN and MAX in sys/param.h
+configure:1966: checking for working const
+configure:2020: gcc -c -g -O2 -I/usr/local/opt/openssl/include conftest.c 1>&5
+configure:2041: checking for size_t
+configure:2074: checking whether struct tm is in sys/time.h or time.h
+configure:2087: gcc -c -g -O2 -I/usr/local/opt/openssl/include conftest.c 1>&5
+configure:2083:20: warning: expression result unused [-Wunused-value]
+struct tm *tp; tp->tm_sec;
+               ~~  ^~~~~~
+1 warning generated.
+configure:2108: checking for u_int32_t
+configure:2141: checking for u_int64_t
+configure:2174: checking for in_addr_t
+configure:2210: checking whether gcc needs -traditional
+configure:2235:10: fatal error: 'termio.h' file not found
+#include <termio.h>
+         ^
+1 error generated.
+configure:2256: checking for 8-bit clean memcmp
+configure:2274: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:2266:1: warning: type specifier missing, defaults to 'int' [-Wimplicit-int]
+main()
+^
+configure:2269:3: warning: implicitly declaring library function 'exit' with type 'void (int) __attribute__((noreturn))'
+  exit(memcmp(&c0, &c2, 1) < 0 && memcmp(&c1, &c2, 1) < 0 ? 0 : 1);
+  ^
+configure:2269:3: note: include the header <stdlib.h> or explicitly provide a declaration for 'exit'
+configure:2269:8: warning: implicitly declaring library function 'memcmp' with type 'int (const void *, const void *, unsigned long)'
+  exit(memcmp(&c0, &c2, 1) < 0 && memcmp(&c1, &c2, 1) < 0 ? 0 : 1);
+       ^
+configure:2269:8: note: include the header <string.h> or explicitly provide a declaration for 'memcmp'
+3 warnings generated.
+configure:2292: checking return type of signal handlers
+configure:2314: gcc -c -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include conftest.c 1>&5
+configure:2333: checking for strftime
+configure:2361: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:2431: checking for gethostname
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:2431: checking for socket
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:2431: checking for strdup
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:2443:6: warning: incompatible redeclaration of library function 'strdup' [-Wincompatible-library-redeclaration]
+char strdup();
+     ^
+configure:2443:6: note: 'strdup' is a builtin with type 'char *(const char *)'
+1 warning generated.
+configure:2431: checking for strstr
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c  1>&5
+configure:2443:6: warning: incompatible redeclaration of library function 'strstr' [-Wincompatible-library-redeclaration]
+char strstr();
+     ^
+configure:2443:6: note: 'strstr' is a builtin with type 'char *(const char *, const char *)'
+1 warning generated.
+configure:2484: checking for xdr_fhstatus in -lrpcsvc
+configure:2503: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lrpcsvc   1>&5
+Undefined symbols for architecture x86_64:
+  "_xdr_fhstatus", referenced from:
+      _main in conftest-53ed9a.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2492 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char xdr_fhstatus();
+
+int main() {
+xdr_fhstatus()
+; return 0; }
+configure:2531: checking for socket in -lsocket
+configure:2550: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lsocket   1>&5
+ld: library not found for -lsocket
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2539 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:2578: checking for gethostbyname in -lnsl
+configure:2597: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lnsl   1>&5
+ld: library not found for -lnsl
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2586 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char gethostbyname();
+
+int main() {
+gethostbyname()
+; return 0; }
+configure:2625: checking for dn_expand in -lresolv
+configure:2644: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv   1>&5
+configure:2674: checking for dirname
+configure:2702: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+configure:2674: checking for strlcpy
+configure:2702: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+configure:2686:6: warning: incompatible redeclaration of library function 'strlcpy' [-Wincompatible-library-redeclaration]
+char strlcpy();
+     ^
+configure:2686:6: note: 'strlcpy' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+1 warning generated.
+configure:2674: checking for strlcat
+configure:2702: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+configure:2686:6: warning: incompatible redeclaration of library function 'strlcat' [-Wincompatible-library-redeclaration]
+char strlcat();
+     ^
+configure:2686:6: note: 'strlcat' is a builtin with type 'unsigned long (char *, const char *, unsigned long)'
+1 warning generated.
+configure:2674: checking for strsep
+configure:2702: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+configure:2732: checking for MD5Update
+configure:2760: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+Undefined symbols for architecture x86_64:
+  "_MD5Update", referenced from:
+      _main in conftest-080267.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+configure: failed program was:
+#line 2737 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char MD5Update(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char MD5Update();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_MD5Update) || defined (__stub___MD5Update)
+choke me
+#else
+MD5Update();
+#endif
+
+; return 0; }
+configure:2792: checking for warnx
+configure:2820: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+configure:2852: checking for ether_ntoa
+configure:2880: gcc -o conftest -g -O2 -D_BSD_SOURCE -I/usr/local/opt/openssl/include -L/usr/local/opt/openssl/lib conftest.c -lresolv  1>&5
+configure:2916: checking for Berkeley DB with 1.85 compatibility
+configure:3011: checking for libpcap
+configure:3059: checking for libnet
+configure:3106: checking for libnids
+configure:3148: checking whether libnids version is good
+configure:3169: checking for OpenSSL
